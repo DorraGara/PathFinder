@@ -3,6 +3,10 @@ from pathfinder import find_path
 
 app = Flask(__name__)
 
+@app.route('/', methods=['GET'])
+def server_up():
+    return 'Server is up and running'
+
 @app.route('/find_path', methods=['POST'])
 def handle_find_path():
     data = request.json
