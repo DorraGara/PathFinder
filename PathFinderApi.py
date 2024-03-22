@@ -8,6 +8,10 @@ app = Flask(__name__)
 def server_up():
     return 'Server is up and running'
 
+@app.route('/demo', methods=['GET'])
+def server_up():
+    return 'Demo working hopefully :D'
+
 @app.route('/find_path', methods=['POST'])
 def handle_find_path():
     data = request.json
