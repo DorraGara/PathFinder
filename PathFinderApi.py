@@ -9,7 +9,7 @@ def server_up():
     return 'Server is up and running'
 
 @app.route('/demo', methods=['GET'])
-def server_up():
+def demo():
     return 'Demo working hopefully :D'
 
 @app.route('/find_path', methods=['POST'])
