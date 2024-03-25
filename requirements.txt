@@ -1,2 +1,3 @@
 flask
 pathfinding
+Flask-Cors
